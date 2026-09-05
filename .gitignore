@@ -1,0 +1,21 @@
+# Secrets
+backend/.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Database
+backend/db/*.db
+# Exception: the final, real 500-record batch used for submission is
+# intentionally committed as evidence -- explicitly un-ignore it.
+!backend/db/recovery_agent.db
+
+# Node
+frontend/node_modules/
+frontend/dist/
+
+# OS
+.DS_Store
